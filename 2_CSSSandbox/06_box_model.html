@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* CSS Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        background: lightgray;
+        border: 2px gray solid;
+        width: 500px;
+        /* Padding on all sides */
+        padding: 20px;
+        margin: 20px;
+      }
+      .box-2 {
+        /* padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px; */
+
+        /* PADDING SHORT HAND - top, right, bottom, left */
+        padding: 10px 20px 10px 20px;
+
+        /* This can be  - top/bottom left/right */
+        padding: 10px 20px;
+        /* Same applies to margin also */
+        margin: 10px 20px;
+      }
+      .box h3 {
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Box 1</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, cumque
+        magni? Ratione molestiae autem est ipsum, atque soluta vel delectus.
+      </p>
+    </div>
+    <div class="box box-2">
+      <h3>Box 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, cumque
+        magni? Ratione molestiae autem est ipsum, atque soluta vel delectus.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Box 3</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, cumque
+        magni? Ratione molestiae autem est ipsum, atque soluta vel delectus.
+      </p>
+    </div>
+  </body>
+</html>

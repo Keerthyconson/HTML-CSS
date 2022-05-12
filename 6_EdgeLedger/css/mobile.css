@@ -1,0 +1,35 @@
+.navbar {
+  flex-direction: column;
+  align-items: unset;
+  height: 120px;
+  padding: 20px;
+}
+
+.navbar .logo {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.navbar ul {
+  justify-content: left;
+}
+
+.navbar ul li a {
+  padding: 10px 10px;
+  margin: 0 3px;
+}
+.flex-items {
+  flex-direction: column;
+}
+
+.flex-columns .column {
+  flex: 100%;
+  max-width: 100%;
+}
+.flex-grid .column {
+  flex: 50%;
+  max-width: 100%;
+}
+
+#team .flex-items div img {
+  width: 70%;
+}

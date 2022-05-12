@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: gray;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+      }
+
+      h1 {
+        display: none;
+      }
+      /* Smartphones */
+      @media (max-width: 500px) {
+        body {
+          background: red;
+          color: azure;
+        }
+        #smartphone h1 {
+          display: block;
+        }
+      }
+
+      /* Tablet */
+      @media (min-width: 501px) and (max-width: 768px) {
+        body {
+          background: beige;
+          color: rebeccapurple;
+        }
+        #tablet h1 {
+          display: block;
+        }
+      }
+      /* Normal size */
+      @media (min-width: 769px) and (max-width: 1200px) {
+        body {
+          background: yellow;
+          color: black;
+        }
+        #normal h1 {
+          display: block;
+        }
+      }
+      /* Widescreen */
+      @media (min-width: 1201px) {
+        body {
+          background: hotpink;
+          color: blue;
+        }
+        #wide-screen h1 {
+          display: block;
+        }
+      }
+      /* Landscape */
+      @media (max-height: 500px) {
+        body {
+          background: olive;
+          color: lightgreen;
+        }
+        #landscape h1 {
+          display: block;
+        }
+      }
+    </style>
+    <!-- After 768px, this will load -->
+    <link
+      rel="stylesheet"
+      href="2_mobile.css"
+      media="screen and (max-width: 768px)"
+    />
+  </head>
+  <body>
+    <div id="wide-screen">
+      <h1>Wide Screen</h1>
+    </div>
+    <div id="normal">
+      <h1>Normal</h1>
+    </div>
+    <div id="tablet">
+      <h1>Tablet</h1>
+    </div>
+    <div id="smartphone">
+      <h1>Smartphone</h1>
+    </div>
+    <div id="landscape">
+      <h1>Landscape</h1>
+    </div>
+  </body>
+</html>
